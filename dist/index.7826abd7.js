@@ -2996,7 +2996,7 @@ const RestaurantCard = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: [
                     props.timeSLA,
-                    " minutes."
+                    " minutes"
                 ]
             }, void 0, true, {
                 fileName: "App.js",
