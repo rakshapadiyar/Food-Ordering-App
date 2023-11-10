@@ -7,32 +7,18 @@ const stylecard = {
   backgroundColor: "#f5ede2",
 };
 
-<<<<<<< HEAD
 const RestaurantCard = (props) => {
-  let starCount = props.stars;
   var s = "";
-  for (let i = 0; i < starCount; i++) s = s.concat("⭐");
-
-=======
-const RestaurantCard = () => {
->>>>>>> ea6f3c9f5146b1f5c4c602a5da46355c720f12f2
+  for (let i = 0; i < props.starRating; i++) s = s + "⭐";
   return (
     <div className="res-card" style={stylecard}>
       {/* INline style
     or stylr{{ backgroundColor: "#f5ede2"}} */}
-<<<<<<< HEAD
       <h3>{props.resName}</h3>
       <img className="res-logo" alt="meghana food" src={meghanaFood} />
       <h4>{props.cuisine}</h4>
-      <p>{s}</p>
-      <p>{props.timeSLA} minutes</p>
-=======
-      <h3>Meghana Food</h3>
-      <img className="res-logo" alt="meghana food" src={meghanaFood} />
-      <h4>Asian, Chinese, Mexican</h4>
-      <h4>⭐⭐⭐⭐</h4>
-      <p>38 minutes</p>
->>>>>>> ea6f3c9f5146b1f5c4c602a5da46355c720f12f2
+      <h4>{s}</h4>
+      <p>{props.time}</p>
     </div>
   );
 };
@@ -42,28 +28,24 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-<<<<<<< HEAD
         <RestaurantCard
-          // passing props to a component
-          resName="Meghana Foods"
-          cuisine="Asian, Chinese, Mexican"
-          stars="5"
-          timeSLA="38"
+          resName="Meghna Food"
+          cuisine="Asian, Mexican"
+          starRating="4"
+          time="20 minutes"
         />
         <RestaurantCard
-          resName="McDonald's"
+          resName="McDonalds"
           cuisine="American Fast Food"
-          stars="4"
-          timeSLA="20"
+          starRating="5"
+          time="30 minutes"
         />
-=======
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
->>>>>>> ea6f3c9f5146b1f5c4c602a5da46355c720f12f2
+        <RestaurantCard
+          resName="Alexandro's"
+          cuisine="Greek"
+          starRating="3"
+          time="50 minutes"
+        />
       </div>
     </div>
   );
