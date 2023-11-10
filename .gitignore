@@ -2,7 +2,6 @@ node_modules
 <<<<<<< HEAD
 .parcel-cache
 dist
-.parcel-cache/data.mdb
 
 =======
 parcel-cache
