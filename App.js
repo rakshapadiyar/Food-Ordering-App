@@ -16,10 +16,17 @@ const RestaurantCard = (props) => {
       {/* INline style
     or stylr{{ backgroundColor: "#f5ede2"}} */}
       <h3>{resObj.resName}</h3>
-      <img className="res-logo" alt="meghana food" src={meghanaFood} />
+      <img
+        className="res-logo"
+        alt="meghana food"
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/" +
+          resObj.cloudinaryId
+        }
+      />
       <h4>{resObj.cuisine.join(", ")}</h4>
       <h4>{s}</h4>
-      <p>{resObj.time}</p>
+      <p>{resObj.time + " minutes"}</p>
     </div>
   );
 };
@@ -29,13 +36,15 @@ const meghnaFoodObj = {
   cuisine: ["Asian", "Mexican"],
   starRating: 4,
   time: 20,
+  cloudinaryId: "f594f4f63d3e00e93203f02d40e38d24",
 };
 
-const McDonaldsObj = {
-  resName: "McDonalds",
+const DominosObj = {
+  resName: "Domino's",
   cuisine: ["American", "Italian"],
   starRating: 5,
   time: 30,
+  cloudinaryId: "fmlkncmjnzgohdkdmjlu",
 };
 
 const AlexandrosFoodObj = {
@@ -43,6 +52,7 @@ const AlexandrosFoodObj = {
   cuisine: ["Italian", "Greek"],
   starRating: 5,
   time: 50,
+  cloudinaryId: "bpglpixwypraici2xhcq",
 };
 
 const Body = () => {
@@ -51,7 +61,7 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="res-container">
         <RestaurantCard resObj={meghnaFoodObj} />
-        <RestaurantCard resObj={McDonaldsObj} />
+        <RestaurantCard resObj={DominosObj} />
         <RestaurantCard resObj={AlexandrosFoodObj} />
       </div>
     </div>
