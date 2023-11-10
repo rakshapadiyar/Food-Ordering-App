@@ -20,7 +20,7 @@ const RestaurantCard = (props) => {
       <img className="res-logo" alt="meghana food" src={meghanaFood} />
       <h4>{props.cuisine}</h4>
       <p>{s}</p>
-      <p>{props.timeSLA} minutes</p>
+      <p>{props.timeSLA} minutes.</p>
     </div>
   );
 };
