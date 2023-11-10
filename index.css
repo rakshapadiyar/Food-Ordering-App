@@ -4,10 +4,15 @@
 .header {
   display: flex;
   justify-content: space-between;
+  background-color: #b89292;
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .logo {
-  width: 130px;
+  width: 120px;
+  margin: 20px;
 }
 .nav-items {
   padding: 0px 300px;
