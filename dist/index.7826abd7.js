@@ -3008,36 +3008,68 @@ const RestaurantCard = (props)=>{
     }, undefined);
 };
 _c = RestaurantCard;
-const meghnaFoodObj = {
-    resName: "Meghna Food",
-    cuisine: [
-        "Asian",
-        "Mexican"
-    ],
-    starRating: 4,
-    time: 20,
-    cloudinaryId: "f594f4f63d3e00e93203f02d40e38d24"
-};
-const DominosObj = {
-    resName: "Domino's",
-    cuisine: [
-        "American",
-        "Italian"
-    ],
-    starRating: 5,
-    time: 30,
-    cloudinaryId: "fmlkncmjnzgohdkdmjlu"
-};
-const AlexandrosFoodObj = {
-    resName: "Alexandro's",
-    cuisine: [
-        "Italian",
-        "Greek"
-    ],
-    starRating: 5,
-    time: 50,
-    cloudinaryId: "bpglpixwypraici2xhcq"
-};
+const restaurantList = [
+    {
+        resName: "Meghna Food",
+        cuisine: [
+            "Asian",
+            "Mexican"
+        ],
+        starRating: 4,
+        time: 20,
+        cloudinaryId: "f594f4f63d3e00e93203f02d40e38d24"
+    },
+    {
+        resName: "Domino's",
+        cuisine: [
+            "American",
+            "Italian"
+        ],
+        starRating: 3,
+        time: 30,
+        cloudinaryId: "fmlkncmjnzgohdkdmjlu"
+    },
+    {
+        resName: "Alexandro's",
+        cuisine: [
+            "Italian",
+            "Greek"
+        ],
+        starRating: 5,
+        time: 50,
+        cloudinaryId: "bpglpixwypraici2xhcq"
+    },
+    {
+        resName: "KFC",
+        cuisine: [
+            "American",
+            "Mexican"
+        ],
+        starRating: 2,
+        time: 90,
+        cloudinaryId: "fewtohdcapsozcspqqwo"
+    },
+    {
+        resName: "Diana",
+        cuisine: [
+            "Indian",
+            "Chinese"
+        ],
+        starRating: 3,
+        time: 54,
+        cloudinaryId: "0c3d9d3a718b5f8ecafe7298f7affa7b"
+    },
+    {
+        resName: "Woodlands",
+        cuisine: [
+            "Indian",
+            "Italian"
+        ],
+        starRating: 4,
+        time: 80,
+        cloudinaryId: "nknjfpqb8shon3bhfutf"
+    }
+];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -3047,43 +3079,43 @@ const Body = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 61,
+                lineNumber: 83,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resObj: meghnaFoodObj
+                        resObj: restaurantList[0]
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 63,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resObj: DominosObj
+                        resObj: restaurantList[1]
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 64,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resObj: AlexandrosFoodObj
+                        resObj: restaurantList[2]
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 65,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 62,
+                lineNumber: 84,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 60,
+        lineNumber: 82,
         columnNumber: 5
     }, undefined);
 };
@@ -3099,12 +3131,12 @@ const HeaderComponent = ()=>{
                     src: (0, _logoJpegDefault.default)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 75,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 74,
+                lineNumber: 96,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -3115,45 +3147,45 @@ const HeaderComponent = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 79,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 80,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 81,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 82,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "App.js",
-                    lineNumber: 78,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 77,
+                lineNumber: 99,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 73,
+        lineNumber: 95,
         columnNumber: 5
     }, undefined);
 };
@@ -3164,18 +3196,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 92,
+                lineNumber: 114,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 93,
+                lineNumber: 115,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 91,
+        lineNumber: 113,
         columnNumber: 5
     }, undefined);
 };
@@ -3183,7 +3215,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 99,
+    lineNumber: 121,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
