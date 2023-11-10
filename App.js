@@ -7,16 +7,20 @@ const stylecard = {
   backgroundColor: "#f5ede2",
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  let starCount = props.stars;
+  var s = "";
+  for (let i = 0; i < starCount; i++) s = s.concat("⭐");
+
   return (
     <div className="res-card" style={stylecard}>
       {/* INline style
     or stylr{{ backgroundColor: "#f5ede2"}} */}
-      <h3>Meghana Food</h3>
+      <h3>{props.resName}</h3>
       <img className="res-logo" alt="meghana food" src={meghanaFood} />
-      <h4>Asian, Chinese, Mexican</h4>
-      <h4>⭐⭐⭐⭐</h4>
-      <p>38 minutes</p>
+      <h4>{props.cuisine}</h4>
+      <p>{s}</p>
+      <p>{props.timeSLA} minutes</p>
     </div>
   );
 };
@@ -26,12 +30,19 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          // passing props to a component
+          resName="Meghana Foods"
+          cuisine="Asian, Chinese, Mexican"
+          stars="5"
+          timeSLA="38"
+        />
+        <RestaurantCard
+          resName="McDonald's"
+          cuisine="American Fast Food"
+          stars="4"
+          timeSLA="20"
+        />
       </div>
     </div>
   );
