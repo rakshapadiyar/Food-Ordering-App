@@ -1,5 +1,10 @@
 node_modules
+<<<<<<< HEAD
 .parcel-cache
 dist
 .parcel-cache/data.mdb
 
+=======
+parcel-cache
+dist
+>>>>>>> ea6f3c9f5146b1f5c4c602a5da46355c720f12f2
