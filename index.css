@@ -31,10 +31,14 @@
 .res-card {
   padding: 5px;
   width: 200px;
-
+  box-sizing: border-box;
   margin: 50px;
   padding: 20px;
 }
+
+/* In your case, by setting box-sizing: border-box;
+for .res-card, you ensure that when you add a border on hover, it won't increase the total size of the card, and it won't affect the layout of neighboring cards. 
+The total size is fixed, and the border and padding are included within that size. */
 
 .res-card:hover {
   cursor: pointer;
