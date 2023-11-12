@@ -59,3 +59,11 @@ The total size is fixed, and the border and padding are included within that siz
   display: flex;
   flex-wrap: wrap;
 }
+.filter-btn {
+  padding: 7px;
+  margin-top: 10px;
+  background-color: #d3adad;
+  cursor: pointer;
+  border: 2px solid black;
+  box-shadow: 0.5px 0.5px grey;
+}

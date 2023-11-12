@@ -1,4 +1,4 @@
-import { CDN_URL } from "../utils/constants";
+import { CDN_URLs } from "../utils/constants";
 const stylecard = {
   backgroundColor: "#f5ede2",
 };
@@ -15,7 +15,7 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="meghana food"
-        src={CDN_URL + resObj.cloudinaryId}
+        src={CDN_URLs + resObj.cloudinaryId}
       />
       <h4>{resObj.cuisine.join(", ")}</h4>
       <h4>{s}</h4>
