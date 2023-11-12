@@ -3,7 +3,7 @@ import restaurantList from "../utils/mockData";
 
 const Body = () => {
   let c = 0;
-
+  let temp_list = restaurantList;
   return (
     <div className="body">
       <div className="filter">
@@ -11,18 +11,15 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             console.log("button clicked");
-            restaurantList = restaurantList.filter(
-              (res) => res.starRating >= 4
-            );
-            console.log(restaurantList);
-            //  useTempList(temp_list);
+            temp_list = restaurantList.filter((res) => res.starRating >= 4);
+            console.log(temp_list);
           }}
         >
           Top Rated Restaurants
         </button>
       </div>
       <div className="res-container">
-        {restaurantList.map((restaurant) => (
+        {temp_list.map((restaurant) => (
           <RestaurantCard key={c++} resObj={restaurant} />
         ))}
       </div>
