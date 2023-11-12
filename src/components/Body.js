@@ -4,8 +4,7 @@ import { useState } from "react";
 
 const Body = () => {
   let c = 0;
-  let temp_list = restaurantList;
-  let [list, setList] = useState(temp_list);
+  let [restaurantList2, setRestaurantList] = useState(restaurantList);
   return (
     <div className="body">
       <div className="filter">
@@ -13,16 +12,18 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             console.log("button clicked");
-            list = restaurantList.filter((res) => res.starRating >= 4);
-            console.log(list);
-            setList(list);
+            restaurantList2 = restaurantList.filter(
+              (res) => res.starRating >= 4
+            );
+            console.log(restaurantList2);
+            setRestaurantList(restaurantList2);
           }}
         >
           Top Rated Restaurants
         </button>
       </div>
       <div className="res-container">
-        {list.map((restaurant) => (
+        {restaurantList2.map((restaurant) => (
           <RestaurantCard key={c++} resObj={restaurant} />
         ))}
       </div>
